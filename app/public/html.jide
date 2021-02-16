@@ -5,11 +5,8 @@
         <title> All about jide</title>
     </head>
     <body>
-        <h1> my first web page </h1>
-        <h2>subtitle</h2>
+        <h1 align = "center"> my first web page </h1>
+        <h2 align = >subtitle</h2>
         <h3> jide is a good boy</h3>
-        <h4>u r good</h4>
-        <h5>it is okay
-        </h5>
 
     </body>
