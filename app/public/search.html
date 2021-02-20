@@ -12,18 +12,19 @@
                 <a href = "createproject.html"> Submit</a>
     <header>
         <h1> Search Project by </h1> <br>
-        <input type="text" placeholder="Project Names, Authors">
+        
+        <input type="searchTerm" placeholder="Project Names, Authors">
+       
     </header>
     <form>
         
         <div>
-            <input type="searchBy" id="searchBy" name="searchBy">
-<select>
-    <option value="Name">Name</option>
-    <option value="Abstract">Abstract</option>
-    <option value="Author">Author</option>
-    <option value="Tags">Tags</option>
-    
+            <label for="searchBy">Search By:</label>
+<select id="cars" name="searchType">
+  <option value="Name">Name</option>
+  <option value="Abstract">Abstract</option>
+  <option value="Authors">Authors</option>
+  <option value="Tags">Tags</option>
 </select> <br>
 <button>Search</button>
 
