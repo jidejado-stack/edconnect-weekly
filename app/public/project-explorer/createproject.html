@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <body>
+        <header>
+            <h1> Project explorer </h1>
+            <h2> One stop Database for Academic Projects</h2>
+            <nav>
+                <a href = "index.html">  Home</a>
+                <a href ="search.html"> Projects </a>
+                <a href = "login.html"> Login </a>
+                <a href ="register.html"> Register</a>
+                <a href = "createproject.html"> Submit</a>
+            </body>
     <header>
         <h1>Submit Project </h1>
     </header>
-    <form>
-        <label for="projectName">Project Name</label><br>
-                    <input type="text" id="projectName" name="projectName"> <br>
-                    <label for="projectAbstract">Project Abstract</label><br>
-                    <input type="text" id="projectAbstract" name="projectAbstract"> <br>
-                    <label for="authors">Authors</label><br>
-                    <input type="text" id="authors" name="authors"> <br>
-                    <label for="tags"> Tag(s)</label><br>
-                    <input type="text" id="tags" name="tags"> <br>
-                    <button type="button">Submit</button> <br>
+    <form name = "submitProject">
+        <label>Project Name</label><br>
+                    <input type="text" name="name"> <br>
+                    <label>Project Abstract</label><br>
+                    <input type="text" name="abstract"> <br>
+                    <label>Authors</label><br>
+                    <input type="text" name="authors"> <br>
+                    <label> Tag(s)</label><br>
+                    <input type="text" name="tags"> <br>
+                    <input type = "submit"> <br>
                     
     </form>
 
