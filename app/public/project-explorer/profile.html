@@ -57,34 +57,34 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="firstName">First Name</label>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" name="firstName">
     </div>
     <div class="form-group col-md-6">
       <label for="lastname">Last Name</label>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" name="lastName">
     </div>
        <div class="form-group col-md-6">
       <label for="emailaddress">Email Address </label>
-      <input type="text" class="form-control">
+      <input type="email" class="form-control" name="email">
     </div>
        <div class="form-group col-md-6">
       <label for="program">Program</label>
-      <select id =  "inputProgram" class = "form-control">
+      <select id =  "inputProgram" class = "form-control" name= "program">
            <option selected>Choose...</option>
           <option>Student</option>
           <option>Visitor</option>
            </select>
       </div>
         <div class="form-group col-md-6">
-      <label for="emailaddress">Matriculation Number </label>
-      <input type="text" class="form-control"> <br>
+      <label>Matriculation Number </label>
+      <input type="text" class="form-control" name="matricNumber"> <br>
              <button type="button" class="btn btn-primary">Update Profile</button>
       </div>
                
            <div class="form-group col-md-6">
-      <label for="emailaddress">Graduation Year </label>
+      <label>Graduation Year </label>
      
-        <select id =  "inputProgram" class = "form-control">
+        <select id =  "inputProgram" class = "form-control" name="graduationYear">
            <option selected>Choose...</option>
           <option>2013</option>
           <option>2014</option>
@@ -104,15 +104,15 @@
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="firstName">Current Password</label>
-      <input type="password" class="form-control"placeholder = "Current Password">
+      <input type="password" class="form-control"placeholder = "Current Password" name="currentPassword">
     </div>
     <div class="form-group col-md-4">
       <label for="lastname">New Password</label>
-      <input type="password" class="form-control" placeholder="Your New Password">
+      <input type="password" class="form-control" placeholder="Your New Password" name="newPassword">
     </div>
        <div class="form-group col-md-4">
       <label for="emailaddress">Confirm Password</label>
-      <input type="password" class="form-control" placeholder="Confirm new Password">
+      <input type="password" class="form-control" placeholder="Confirm new Password" name="confirmPassword">
     </div>
            </div>
            <button type="button" class="btn btn-primary">Change Password</button>
