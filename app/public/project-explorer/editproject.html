@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <header>
-        <h1> Project explorer </h1>
-        <h2> One stop Database for Academic Projects</h2>
-        </header>
-        <nav>
-            <a href = "index.html">  Home</a>
-            <a href ="search.html"> Projects </a>
-            <a href = "login.html"> Login </a>
-            <a href ="register.html"> Register</a>
-            <a href = "createproject.html"> Submit</a>
-        </nav>
-    
-    <header>
-        <h1> Project 1</h1>
-    </header>
-        <ul>
-            <li> Created by : Jane Doe </li>
-            <li> Date Created:00/00/0000 </li>
-            <li> Last Updated : 01/01/0001 </li>
-        </ul>
-        <header>
-            <h1>Edit Project</h1>
-        </header>
-        <form name ="editProject">
-            <label>Project Name</label><br>
-            <input type="text" name="name"> <br>
-            <label>Project Abstract</label><br>
-            <textarea type="text" name="abstract"></textarea><br>
-            <label>Authors</label><br>
-            <input type="text" name="authors"> <br>
-            <label> Tag(s)</label><br>
-            <input type="text" name="tags"> <br>
-            <label> Upload File</label>
-            <input type = "file" name = "projectFile"> <br>
-            <input type = "submit"> <br>
-             </form>
-     </body>
+        <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href= "css/bootstrap.min.css">
+    <style>.footer {text-align: end} </style>
+        </head>
+<body>
   
-
-</html>
+    <div class = "container-fluid-justify-end">
+    <nav class = "navbar navbar-expand-lg navbar-dark bg-primary text-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class = "navbar-brand" href ="#">Project Explorer</a>
+        <form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2"></label>
+  <input type="text" class="form-control mb-2 mr-sm-2" name = "searchForm" placeholder="Search Projects">
+           <button type="submit" class="btn btn-outline-light mr-2">Search</button>
+        </form>
+      
+              <label for="submit">Submit</label>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Signup </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+        </ul>
+        </div>
+        </nav>
+     <div class="container-fluid">
+        <div class = "container">
+         <h1>Project 1</h1>
+         </div>
+         <div class="d-flex justify-content-end">
+         <div class="container">
+  <div class="row row-cols-4">
+    <div class="col"><h3>Created By Jidejado</h3></div>
+    <div class="col"><h3>Date Created 2021-04-09</h3></div>
+    <div class="col"><h3>Last Updated 2021-04-09</h3></div>
+      <div class="d-flex justify-content-end">
+    <div class="col"><button type="button" class="btn btn-primary">View Project</button></div>
+  </div>
+             </div>
+            </div>
+         </div>
+</div>
+        <div class="container">
+  <div class="row row-cols-2">
+    <div class="col"><strong>Edit Project</strong></div>
+    <div class="col"> <strong>Manage Project Files</strong></div>
+    <div class="col">
+      <div class = "form row">
+        <label for="inputdefault">Project 1</label>
+      <input class="form-control" type="text" placeholder="Project Name">
+        </div>
+        <div class="form-group">
+    <label for="exampleFormControlTextarea1">Project Abstract</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="The Project is  very Interesting"></textarea>
+  </div>
+      </div>
+    <div class="col">
+      <div class="input-group mb-3">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile02">
+    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Click to open file browser</label>
+  </div>
+      </div>
+        <div class="card" style="width: 36rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><strong>Project Files</strong></li>
+    <li class="list-group-item">No file uploaded yet</li>
+  </ul>
+</div>
+    </div>
+       <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Author(s)</label>
+    <input type="text" class="form-control">
+  </div>
+            <div class="form-group">
+    <label for="exampleFormControlInput1">Tag(s)</label>
+    <input type="text" class="form-control">
+  </div>
+</form>
+            </div>
+             <button type="button" class="btn btn-primary">Save</button>
+      
+            </body>
+        

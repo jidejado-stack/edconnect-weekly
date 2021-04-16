@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <header>
-            <h1> Project explorer </h1>
-            <h2> One stop Database for Academic Projects</h2>
-            <nav>
-                <a href = "index.html">  Home</a>
-                <a href ="search.html"> Projects </a>
-                <a href = "login.html"> Login </a>
-                <a href ="register.html"> Register</a>
-                <a href = "createproject.html"> Submit</a>
-            </nav>
-    <header>
-        <h1>Submit Project </h1>
-    </header>
-    <form name = "submitProject">
-                    <label>Project Name</label><br>
-                    <input type="text" name="name"> <br>
-                    <label>Project Abstract</label><br>
-                    <textarea type="text" name="abstract"></textarea><br>
-                    <label>Authors</label><br>
-                    <input type="text" name="authors"> <br>
-                    <label> Tag(s)</label><br>
-                    <input type="text" name="tags"> <br>
-                    <input type = "submit"> <br>
-                    
-    </form>
-    </body>
-
-</html>
+        <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href= "css/bootstrap.min.css">
+    <style>.footer {text-align: end} </style>
+        </head>
+<body>
+  
+    <div class = "container-fluid-justify-end">
+    <nav class = "navbar navbar-expand-lg navbar-dark bg-primary text-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class = "navbar-brand" href ="#">Project Explorer</a>
+        <form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2"></label>
+  <input type="text" class="form-control mb-2 mr-sm-2" name = "searchForm" placeholder="Search Projects">
+           <button type="submit" class="btn btn-outline-light mr-2">Search</button>
+        </form>
+      
+              <label for="submit">Submit</label>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Signup </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+        </ul>
+        </div>
+        </nav>
+    </div>
+    <div class="mx-auto" style="width: 500px;">
+  <h2>Submit Project</h2>
+        <h4>Project Name</h4>
+        <div class="form-group">
+      <input type="text" class="form-control"placeholder = "Enter Project Name">
+    </div>
+        <h4>Project Abstract</h4>
+            <div class="form-group">
+      <input type="text" class="form-control">
+    </div>
+        <h4>Author(s)</h4>
+            <div class="form-group">
+      <input type="text" class="form-control"placeholder="Enter Author's Name separated with a comma">
+        </div>
+         <h4>Tag(s)</h4>
+            <div class="form-group">
+      <input type="text" class="form-control"placeholder="Use # to tag project with different topics (e.g #javascript #mongodb) ">
+        </div>
+        <button type="button" class="btn btn-primary">Continue</button>
+            </div>

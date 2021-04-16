@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <header>
-            <h1> Project explorer </h1>
-            <h2> One stop Database for Academic Projects</h2>
-            <nav>
-                <a href = "index.html">  Home</a>
-                <a href ="search.html"> Projects </a>
-                <a href = "login.html"> Login </a>
-                <a href ="register.html"> Register</a>
-                <a href = "createproject.html"> Submit</a>
-            </nav>
-    <header>
-        <h1> Search Project by </h1> <br>
-         </header>
-    <form name = "searchForm">
-        <input type="text"  name = "searchTerm" placeholder="Project Names, Authors">
-        <div>
-            <label for="searchBy">Search By:</label>
-<select name="searchType">
-  <option value="Name">Name</option>
-  <option value="Abstract">Abstract</option>
-  <option value="Authors">Authors</option>
-  <option value="Tags">Tags</option>
-</select> <br>
-<input type = "submit" value = "Search">
-
-        </div>
-    <header>
-        <h1>Search Result</h1>
-     </header>
-     <div>
-         <h1>Project 1</h1>
-         <ul>
-             <li> Name :Project 1</li>
-             <li>Description : learning how to code in html, html basics and web development</li>
-             <li>Program : Computer Science</li>
-             <li>Authors : Jon Doe, Jane Doe</li>
-             <li>Tags : Asphyxia and GSW</li>
-             <li>Year :2018</li>
-         </ul>
-     </div>
+        <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href= "css/bootstrap.min.css">
+    <style>.footer {text-align: end} </style>
+        </head>
+<body>
+  
+    <div class = "container-fluid-justify-end">
+    <nav class = "navbar navbar-expand-lg navbar-dark bg-primary text-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class = "navbar-brand" href ="#">Project Explorer</a>
+        <form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2"></label>
+  <input type="text" class="form-control mb-2 mr-sm-2" name = "searchForm" placeholder="Search Projects">
+           <button type="submit" class="btn btn-outline-light mr-2">Search</button>
         </form>
+      
+              <label for="submit">Submit</label>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Signup </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+        </ul>
+        </div>
+        </nav>
+    </div>
+    <div class="p-3 mb-2 bg-light text-dark"><h1>Project Gallery</h1>
+        <form>
+  <div class="form-group row">
+    <div class="col-sm-6">
+      <input type="text" class="form-control" placeholder="Search Project names, author,title,tags">
+    </div>
+    <div class="col-sm-4">
+        
+   <div class = "col-sm-4">
+       <button type="button" class="btn btn-sm">Search By</button>
+      <select class="form-control input-lg" id="sel2">
+        <option>Name</option>
+        <option>Tag</option>
+        <option>Class</option>
+      </select>
+      </div>
+      </div>      
+  </div>
+</form>
+    </div>
+    <h1>All Projects (0 results)</h1>
+    <div class="d-flex flex-row bd-highlight mb-3">
+  <div class="card" style="width: 25rem;">
+  <div class="card-body">
+    <h5 class="card-title">Project 1</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Project 1</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      </div>
+      <div class="card" style="width: 25rem;">
+  <div class="card-body">
+    <h5 class="card-title">Project 2</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Project 2</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+    </div>
     </body>
 </html>
