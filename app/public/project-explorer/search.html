@@ -23,42 +23,50 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-          <a class="nav-link" href="#">Signup </a>
+          <a class="nav-link" href="register.html">Signup </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="login.html">Login</a>
       </li>
         </ul>
         </div>
         </nav>
     </div>
-    <div class="p-3 mb-2 bg-light text-dark"><h1>Project Gallery</h1>
-        <form>
-  <div class="form-group row">
-    <div class="col-sm-6">
-      <input type="text" class="form-control" placeholder="Search Project names, author,title,tags">
+        <br>
+    <div class="container">
+      <h3>Project Gallery</h3>
+        <div class = "bg-light">
+     <form>       
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <label for = "searchTerm"></label>
+      <input name = "searchTerm" id="searchTerm" class="form-control" type="text" placeholder="Search Project names, author,title,tags" name="searchTerm">
     </div>
-    <div class="col-sm-4">
-        
-   <div class = "col-sm-4">
-       <button type="button" class="btn btn-sm">Search By</button>
-      <select class="form-control input-lg" id="sel2">
-        <option>Name</option>
-        <option>Tag</option>
-        <option>Class</option>
-      </select>
+      <div class="form-group col-md-1">
+          <button type="button" class="btn btn-secondary btn-lg">Search By</button></div>
+       <div class="form-group col-md-3">
+          <label for ="searchType"></label>
+      <select class="form-control" name ="searchType" id="searchType">
+        <option value="Name">Name</option>
+        <option value="Abstract">Abstract</option>
+        <option value="Authors">Authors</option>
+          <option value="Tags">Tags</option>
+        </select>
+           <div class="form-group col-md-2"><button class="btn btn-primary btn-lg " type="submit">Submit</button></div> 
       </div>
-      </div>      
-  </div>
-</form>
-    </div>
-    <h1>All Projects (0 results)</h1>
+      </div>
+      </form>
+           
+    <h3>All Projects (0 results)</h3>
     <div class="d-flex flex-row bd-highlight mb-3">
-  <div class="card" style="width: 25rem;">
+  <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Project 1</h5>
     <h6 class="card-subtitle mb-2 text-muted">Project 1</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">#html</a>
+       <a href="#" class="card-link">#css</a>
+       <a href="#" class="card-link">#javascript</a>
       </div>
       </div>
       <div class="card" style="width: 25rem;">
@@ -66,10 +74,15 @@
     <h5 class="card-title">Project 2</h5>
     <h6 class="card-subtitle mb-2 text-muted">Project 2</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">#html</a>
+       <a href="#" class="card-link">#css</a>
+       <a href="#" class="card-link">#javascript</a>
           </div>
     </div>
-    </div>
-        </body>
+            </div>
+        </div>
+        </div>
+    </body>
 </html>
 
     
