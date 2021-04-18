@@ -37,25 +37,27 @@
       <h3>Project Gallery</h3>
         <div class = "bg-light">
      <form>       
-  <div class="form-row">
-    <div class="form-group col-md-6">
+  <div class="form-row bg-light p-3">
+    <div class="form-group col">
         <label for = "searchTerm"></label>
-      <input name = "searchTerm" id="searchTerm" class="form-control" type="text" placeholder="Search Project names, author,title,tags" name="searchTerm">
+      <input name = "searchTerm" id="searchTerm" class="form-control-lg" type="text" placeholder="Search Project names, author,title,tags" name="searchTerm">
     </div>
-      <div class="form-group col-md-1">
+      <div class="form-group col">
           <button type="button" class="btn btn-secondary btn-lg">Search By</button></div>
-       <div class="form-group col-md-3">
+       <div class="form-group col-md-2">
           <label for ="searchType"></label>
-      <select class="form-control-lg" name ="searchType" id="searchType">
+      <select class="form-control" name ="searchType" id="searchType">
         <option value="Name">Name</option>
         <option value="Abstract">Abstract</option>
         <option value="Authors">Authors</option>
           <option value="Tags">Tags</option>
         </select>
-           <div class="form-group col-md-2"><button class="btn btn-primary btn-lg " type="submit">Submit</button></div> 
+     </div>
+      <div class="form-group col-md-2"><button class="btn btn-primary btn-lg " type="submit">Submit</button>
       </div>
-      </div>
+      </div> 
       </form>
+        </div>
            
     <h3>All Projects (0 results)</h3>
     <div class="d-flex flex-row bd-highlight mb-3">
@@ -81,8 +83,8 @@
     </div>
             </div>
         </div>
+        <div class = "footer">
+        <p>Project Explorer@ 2020.<b>Edconnect</b>  </p>
         </div>
     </body>
 </html>
-
-    
