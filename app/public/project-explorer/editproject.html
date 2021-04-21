@@ -7,7 +7,6 @@
     <style>.footer {text-align: end} </style>
         </head>
 <body>
-  
     <div class = "container-fluid-justify-end">
     <nav class = "navbar navbar-expand-lg navbar-dark bg-primary text-white">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,9 +17,10 @@
   <label class="sr-only" for="inlineFormInputName2"></label>
   <input type="text" class="form-control mb-2 mr-sm-2" name = "searchForm" placeholder="Search Projects">
            <button type="submit" class="btn btn-outline-light mr-2">Search</button>
+        
+         <label for="projects">Projects</label>
         </form>
-      
-              <label for="submit">Submit</label>
+             
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
@@ -31,7 +31,7 @@
       </li>
         </ul>
         </div>
-        </nav>
+            </nav>
         <main>
           <section>
      <div class="container-fluid">
@@ -42,11 +42,11 @@
          
          </div>
          <div class="row bg-light">
-         <div class="col-sm">
+         <div class="col">
              <p><b>Created By</b></p>
              <p><b>Jide Jado</b></p>
              </div>
-             <div class="col-sm">
+             <div class="col">
              <p><b>Date Created </b></p>
                  <p><b>2021/04/09</b></p>
             </div>
@@ -54,36 +54,36 @@
                  <p><b>Last Updated</b></p>
                  <p><b>2021/04/09</b></p>
             </div>
-      <div class="d-flex justify-content-end">
-    <div class="col"><button type="button" class="btn btn-primary">View Project</button></div>
+      <div class=" col d flex justify content end">
+    <button type="button" class="btn btn-primary">View Project</button>
+             </div>
   </div>
              </div>
             </div>
          </div>
-</div>
 </section>
 <section>
         <div class="container">
   <div class="row row-cols-2">
     <div class="col"><strong>Edit Project</strong></div>
     <div class="col"> <strong>Manage Project Files</strong></div>
-      <form name="editProject">
+      <form>
           <div class="col">
   <div class="form-group">
-    <label for="formGroupExampleInput">Project Name</label>
-    <input type="text" class="form-control" placeholder="Project 1" name="projectName">
+    <label for="projectName">Project Name</label>
+    <input type="text" name="name"  class="form-control" placeholder="Project 1" >
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">Project Abstract</label>
-    <textarea class="form-control" rows="3" placeholder="The Project is  very Interesting" name="abstract"></textarea>
+    <label for="abstract">Project Abstract</label>
+    <textarea class="form-control" rows="7" placeholder="The Project is  very Interesting" name="abstract"></textarea>
   </div>
           <div class="form-group">
-    <label for="formGroupExampleInput">Author(s)</label>
+    <label for="authors">Author(s)</label>
     <input type="text" class="form-control"  placeholder="Jide Jado" name="authors">
   </div>
           <div class="form-group">
-    <label for="formGroupExampleInput">Tag(s)</label>
-    <input type="text" class="form-control" placeholder="#web" name="tags">
+    <label for="tags">Tags:</label>
+    <input type="text" name="tags" class="form-control" placeholder="#web" >
   </div>
           
           <button type="button" class="btn btn-primary">Save</button>
